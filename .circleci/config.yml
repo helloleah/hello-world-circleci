@@ -8,7 +8,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - pwd
+      - run: pwd
       - store_artifacts:
           path: ~/project/
           destination: workspaces_vs_caching.md   
